@@ -1,38 +1,38 @@
----Ê¹ÓÃÁ÷³Ì---
-¡¤½øÈëvirtualenv
-LinuxÏÂ£º $ source venv/bin/activate
-windowsÏÂ£º$ venv\scripts\activate
+---ä½¿ç”¨æµç¨‹---
+Â·è¿›å…¥virtualenv
+Linuxä¸‹ï¼š $ source venv/scripts/activate
+windowsä¸‹ï¼š$ venv\scripts\activate
 
-¡¤ÔËĞĞ
+Â·è¿è¡Œ
 1\
 --cd flaskr
 --python flaskr.py
-	µÃµ½ÔËĞĞ½á¹ûRunning on http://127.0.0.1:5000/
-	·ÃÎÊhttp://127.0.0.1:5000/
+	å¾—åˆ°è¿è¡Œç»“æœRunning on http://127.0.0.1:5000/
+	è®¿é—®http://127.0.0.1:5000/
 ....
-   Ò²¿ÉÒÔÖ±½ÓÔÚsettingÉèÖÃºÃpythonÂ·¾¶ºóÓÃpycharmÔËĞĞÀ²
+   ä¹Ÿå¯ä»¥ç›´æ¥åœ¨settingè®¾ç½®å¥½pythonè·¯å¾„åç”¨pycharmè¿è¡Œå•¦
 2\
---·ÃÎÊºó»á±»ÖØ¶¨Ïòµ½http://127.0.0.1:5000/login/
---×¢²á»òÕßµÇÂ¼¾ÍºÃ
+--è®¿é—®åä¼šè¢«é‡å®šå‘åˆ°http://127.0.0.1:5000/login/
+--æ³¨å†Œæˆ–è€…ç™»å½•å°±å¥½
 
 
-¡¤flaskrÖĞµÄÎÄ¼ş½á¹¹
-|controller  #´¦ÀíÇëÇóÊ±Ê¹ÓÃµÄÒµÎñº¯Êı£¨Àà£©
-	|loginController.py  #´¦ÀíµÇÂ¼ºÍ×¢²áÇëÇó
-|models	#Êı¾İ¿â²Ù×÷ÓÃµ½µÄORMÀà,Ò»¸ö¶ÔÓ¦Ò»ÕÅ±í
+Â·flaskrä¸­çš„æ–‡ä»¶ç»“æ„
+|controller  #å¤„ç†è¯·æ±‚æ—¶ä½¿ç”¨çš„ä¸šåŠ¡å‡½æ•°ï¼ˆç±»ï¼‰
+	|loginController.py  #å¤„ç†ç™»å½•å’Œæ³¨å†Œè¯·æ±‚
+|models	#æ•°æ®åº“æ“ä½œç”¨åˆ°çš„ORMç±»,ä¸€ä¸ªå¯¹åº”ä¸€å¼ è¡¨
 	|users.py   
-	|entries.py #Ö»ÊÇÊµÑéµÄÊ±ºò·Å×ÅÓÃµÄ
-|static	#´úÂëÖĞÒªÓÃµ½µÄ¾²Ì¬×ÊÔ´
+	|entries.py #åªæ˜¯å®éªŒçš„æ—¶å€™æ”¾ç€ç”¨çš„
+|static	#ä»£ç ä¸­è¦ç”¨åˆ°çš„é™æ€èµ„æº
 	|css
 	|js
 	|images
-|templates	#Ä£°å£¬¼´Ç°¶ËÎÄ¼ş
+|templates	#æ¨¡æ¿ï¼Œå³å‰ç«¯æ–‡ä»¶
 	|index.html
 	|login.html
-|config.py	#¿ò¼ÜµÄÅäÖÃÎÄ¼ş
-|database.py	#Á¬½ÓMysql
-|flaskr.py	#Ö÷ÒªÎÄ¼ş£¬ºóÌ¨Èë¿Ú£¬url´¦Àí
-|middleware.py	#ÖĞ¼ä¼ş£¬ÔÚurlÌø×ªÖ®Ç°½øĞĞÒ»Ğ©Ìõ¼ş¼ì²é
-|*.sql		#½¨±íµÄsqlÓï¾ä£¬·½±ãÓÃ
+|config.py	#æ¡†æ¶çš„é…ç½®æ–‡ä»¶
+|database.py	#è¿æ¥Mysql
+|flaskr.py	#ä¸»è¦æ–‡ä»¶ï¼Œåå°å…¥å£ï¼Œurlå¤„ç†
+|middleware.py	#ä¸­é—´ä»¶ï¼Œåœ¨urlè·³è½¬ä¹‹å‰è¿›è¡Œä¸€äº›æ¡ä»¶æ£€æŸ¥
+|*.sql		#å»ºè¡¨çš„sqlè¯­å¥ï¼Œæ–¹ä¾¿ç”¨
 
-¸½×¢£ºflaskr.pyµÄ__main__µ×ÏÂ×¢ÊÍÀïÓĞÒ»Ğ©ÊµÑésqlalchemy²Ù×÷Êı¾İ¿âÊ±ºòµÄº¯Êı¡£¡£¡£
+é™„æ³¨ï¼šflaskr.pyçš„__main__åº•ä¸‹æ³¨é‡Šé‡Œæœ‰ä¸€äº›å®éªŒsqlalchemyæ“ä½œæ•°æ®åº“æ—¶å€™çš„å‡½æ•°ã€‚ã€‚ã€‚
